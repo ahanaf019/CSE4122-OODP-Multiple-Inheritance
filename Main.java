@@ -1,9 +1,13 @@
 class Main {
     public static void main(String[] args) {
         
-        HybridRaceCar hybridRaceCar = new HybridRaceCar();
+        HybridCar hybridCar = new HybridCar("Toyota Aqua");
 
-        hybridRaceCar.refuel();
-        hybridRaceCar.run();
+        hybridCar.refuel();
+        hybridCar.run();
+        hybridCar.charge();
+        int tankCapacity  = hybridCar.getTankCapacity();
+
+        System.out.println("The tank capacity is: " + tankCapacity);
     }
 }

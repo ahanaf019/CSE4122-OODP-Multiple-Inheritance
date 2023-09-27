@@ -1,11 +1,9 @@
 public interface FuelCar {
-    
-    public static int tankCapacity = 5;
-    
-    public static int getTankCapacity() {
-        return tankCapacity;
-    }
 
     public void run();
+    // a fuel car needs fuel to run
     public void refuel();
+    public int getCurrentFuel();    
+    public int getTankCapacity();
+
 }
